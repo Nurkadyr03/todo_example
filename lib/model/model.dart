@@ -1,14 +1,15 @@
 import 'dart:convert';
 
 class Todo {
-  const Todo({
+ Todo({
+     this.id,
     required this.title,
     this.description,
     required this.isCompleted,
     required this.author,
    
   });
-
+   String? id;
   final String title;
   final String? description;
   final bool isCompleted;
